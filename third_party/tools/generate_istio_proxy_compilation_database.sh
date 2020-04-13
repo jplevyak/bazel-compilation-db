@@ -9,7 +9,7 @@ bazel build \
   --experimental_action_listener=//third_party/tools/generate_compile_commands:extract_json \
   --noshow_progress \
   --noshow_loading_progress \
-  //... > /dev/null
+  //src/envoy:envoy > /dev/null
 
 pushd $(bazel info execution_root) > /dev/null
 echo "[" > compile_commands.json
